@@ -1,4 +1,4 @@
-export default function Home() {
+export default function VertexIQSystemsWebsite() {
   const brand = {
     name: 'VertexIQ Systems',
     tagline: 'From Idea to Scalable Digital Products',
@@ -122,20 +122,20 @@ export default function Home() {
               rel="noreferrer"
               className="hidden rounded-2xl bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] px-5 py-3 text-sm font-semibold shadow-lg shadow-[#6C4CF1]/20 md:inline-flex"
             >
-              Start Your Project
+              Book a Free Consultation
             </a>
           </nav>
 
           <div className="grid items-center gap-14 py-20 md:grid-cols-2 md:py-28">
             <div>
               <div className="mb-6 inline-flex rounded-full border border-[#6C4CF1]/30 bg-[#6C4CF1]/10 px-4 py-2 text-sm text-[#d8d0ff]">
-                {brand.tagline}
+                Scalable Solutions for Modern Businesses
               </div>
-              <h1 className="max-w-3xl text-5xl font-black leading-tight md:text-7xl">
-                We Build <span className="bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] bg-clip-text text-transparent">Premium Digital Products</span> for Modern Businesses.
+              <h1 className="max-w-4xl text-5xl font-black leading-tight md:text-7xl">
+                We Build <span className="bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] bg-clip-text text-transparent">Scalable Web Apps, Systems & Digital Platforms</span> for Growing Businesses.
               </h1>
-              <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
-                VertexIQ Systems helps startups, businesses, and founders transform ideas into polished websites, scalable systems, and high-performing digital products.
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+                From strategy to deployment, VertexIQ Systems designs and builds premium digital products that help businesses operate better, look stronger, and grow faster.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
@@ -145,7 +145,7 @@ export default function Home() {
                   rel="noreferrer"
                   className="rounded-2xl bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] px-7 py-4 text-sm font-semibold shadow-xl shadow-[#6C4CF1]/25 transition hover:scale-[1.02]"
                 >
-                  Start Your Project
+                  Book a Free Consultation
                 </a>
                 <a
                   href={brand.calendlyUrl}
@@ -164,6 +164,13 @@ export default function Home() {
                     <p className="mt-2 text-sm font-semibold text-white">{value}</p>
                   </div>
                 ))}
+              </div>
+
+              <div className="mt-8 flex flex-wrap items-center gap-3 text-sm text-slate-300">
+                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">Web Applications</span>
+                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">Business Systems</span>
+                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">Automation</span>
+                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">Consulting</span>
               </div>
             </div>
 
@@ -207,11 +214,11 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20" id="services">
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Services</p>
-          <h2 className="mt-4 text-3xl font-black md:text-5xl">Scalable solutions built with premium execution.</h2>
+          <h2 className="mt-4 text-3xl font-black md:text-5xl">What VertexIQ Systems helps businesses build.</h2>
           <p className="mt-5 text-lg text-slate-300">
-            We create refined digital products that strengthen your brand, improve operations, and position your business for growth.
+            We create polished digital products and systems that improve visibility, streamline operations, and help brands grow with confidence.
           </p>
         </div>
 
@@ -236,14 +243,17 @@ export default function Home() {
           <div className="grid gap-10 md:grid-cols-2 md:items-start">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Why VertexIQ</p>
-              <h2 className="mt-4 text-3xl font-black md:text-5xl">Built like a serious product team, not a casual freelancer setup.</h2>
+              <h2 className="mt-4 text-3xl font-black md:text-5xl">A premium digital partner focused on results, not just code.</h2>
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+                We combine business thinking, modern design, and clean engineering to deliver digital products that feel premium and perform with purpose.
+              </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               {[
-                'Business-focused execution',
-                'Premium design standards',
-                'Scalable system thinking',
-                'Professional communication',
+                'Scalable solutions for growth',
+                'Fast, clear project delivery',
+                'Modern design and user experience',
+                'Business-focused technical strategy',
               ].map((item) => (
                 <div key={item} className="rounded-[1.5rem] border border-white/10 bg-[#0a1124] p-6 text-slate-200">
                   {item}
