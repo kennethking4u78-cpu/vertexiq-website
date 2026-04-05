@@ -296,19 +296,20 @@ export default function VertexIQSystemsWebsite() {
               </p>
             </div>
 
-            <div className="space-y-5">
-              {process.map((step, index) => (
-                <div key={step} className="flex items-start gap-5 rounded-[1.6rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#6C4CF1] to-[#2EA8FF] text-sm font-black shadow-lg shadow-[#6C4CF1]/20">
-                    0{index + 1}
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">{step}</h3>
-                    <p className="mt-2 leading-7 text-slate-300">
-                      A focused phase designed to keep communication clear, quality high, and business objectives at the center of the build.
-                    </p>
-                  </div>
-                </div>
+            <form action="https://formsubmit.co/info@vertexiqsystems.com" method="POST" className="space-y-5">
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_subject" value="New Website Inquiry - VertexIQ" />
+
+                <input name="name" required className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500" placeholder="Your name" />
+                <input name="email" type="email" required className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500" placeholder="Email address" />
+                <input name="service" className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500" placeholder="What do you need built?" />
+                <textarea name="message" required className="min-h-[150px] w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500" placeholder="Tell us about your project" />
+
+                <button type="submit" className="w-full rounded-2xl bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] px-6 py-4 text-center font-semibold shadow-xl shadow-[#6C4CF1]/20 transition hover:scale-[1.01]">
+                  Send Message
+                </button>
+              </form>
+            </div>
               ))}
             </div>
           </div>
