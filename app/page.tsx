@@ -420,39 +420,66 @@ export default function VertexIQSystemsWebsite() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20" id="thank-you">
-        <div className="overflow-hidden rounded-[2.2rem] border border-white/10 bg-gradient-to-br from-[#081022] via-[#0b1630] to-[#060b1b] shadow-2xl shadow-[#091126]/50">
-          <div className="grid gap-10 px-8 py-10 md:grid-cols-[1fr_0.95fr] md:px-12 md:py-14">
+        <div className="relative overflow-hidden rounded-[2.4rem] border border-emerald-400/20 bg-[linear-gradient(135deg,#07111f_0%,#0d1832_45%,#0b1020_100%)] shadow-2xl shadow-[#091126]/50">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.18),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(46,168,255,0.12),transparent_30%)]" />
+          <div className="absolute right-8 top-8 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm font-semibold text-emerald-300">
+            Request Received
+          </div>
+
+          <div className="relative grid gap-10 px-8 py-10 md:grid-cols-[1.1fr_0.9fr] md:px-12 md:py-14">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Thank You</p>
-              <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">Your consultation request is in. Here’s what happens next.</h2>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-                Thank you for booking with VertexIQ Systems. You should receive your meeting details by email, and you can also reach us directly if you want to share more context before the call.
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-emerald-300">Thank You</p>
+              <h2 className="mt-4 max-w-4xl text-4xl font-black leading-tight md:text-6xl">
+                Your request has been received successfully.
+              </h2>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+                Thank you for reaching out to VertexIQ Systems. This confirmation page means your project request has gone through, and we will review it carefully before responding with the next steps.
               </p>
 
-              <div className="mt-8 grid gap-4 sm:grid-cols-3">
+              <div className="mt-8 inline-flex items-center gap-3 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm text-emerald-200">
+                <span className="inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400" />
+                Submission confirmed
+              </div>
+
+              <div className="mt-10 grid gap-4 sm:grid-cols-3">
                 <div className="rounded-[1.4rem] border border-white/10 bg-white/5 p-5">
                   <p className="text-sm text-slate-400">Step 1</p>
                   <p className="mt-2 font-semibold text-white">Check your email</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">Look out for your meeting confirmation and access details.</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-300">Look out for your confirmation and any follow-up details from us.</p>
                 </div>
                 <div className="rounded-[1.4rem] border border-white/10 bg-white/5 p-5">
                   <p className="text-sm text-slate-400">Step 2</p>
                   <p className="mt-2 font-semibold text-white">Prepare your goals</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">Bring your timeline, business goals, and project priorities to the call.</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-300">Be ready with your priorities, timeline, and what success looks like for your project.</p>
                 </div>
                 <div className="rounded-[1.4rem] border border-white/10 bg-white/5 p-5">
                   <p className="text-sm text-slate-400">Step 3</p>
-                  <p className="mt-2 font-semibold text-white">Need immediate contact?</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">Send us a WhatsApp message and we will point you in the right direction.</p>
+                  <p className="mt-2 font-semibold text-white">Need immediate support?</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-300">Use the direct contact options if you want to add extra context now.</p>
                 </div>
+              </div>
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href="#start-project"
+                  className="rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  Submit Another Request
+                </a>
+                <a
+                  href="#services"
+                  className="rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  Explore Services
+                </a>
               </div>
             </div>
 
-            <div className="rounded-[1.9rem] border border-white/10 bg-white/5 p-7 backdrop-blur">
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-7 backdrop-blur">
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#b8cfff]">Direct Contact</p>
-              <h3 className="mt-4 text-2xl font-bold">Reach VertexIQ Systems directly</h3>
+              <h3 className="mt-4 text-2xl font-bold">Need a faster response?</h3>
               <p className="mt-4 leading-7 text-slate-300">
-                Use any of these options if you want a faster response before your consultation.
+                If your project is urgent or you want to share additional details before we reply, use any of the options below.
               </p>
 
               <div className="mt-8 space-y-4">
@@ -474,10 +501,18 @@ export default function VertexIQSystemsWebsite() {
                 </a>
                 <a
                   href={`mailto:${brand.email}`}
-                  className="block rounded-2xl bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] px-5 py-4 font-semibold text-white shadow-xl shadow-[#6C4CF1]/20"
+                  className="block rounded-2xl bg-gradient-to-r from-emerald-400 via-[#6C4CF1] to-[#2EA8FF] px-5 py-4 font-semibold text-white shadow-xl shadow-emerald-400/10"
                 >
                   Email — {brand.email}
                 </a>
+              </div>
+
+              <div className="mt-8 rounded-[1.5rem] border border-white/10 bg-[#050816]/60 p-5">
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Expected response</p>
+                <p className="mt-3 text-lg font-semibold text-white">Usually within 1 business day</p>
+                <p className="mt-2 text-sm leading-6 text-slate-300">
+                  Serious and time-sensitive project inquiries can also be pushed faster through WhatsApp.
+                </p>
               </div>
             </div>
           </div>
