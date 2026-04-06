@@ -5,7 +5,7 @@ export default function VertexIQSystemsWebsite() {
     email: 'info@vertexiqsystems.com',
     ukWhatsappNumber: '447376174981',
     ghWhatsappNumber: '233534177839',
-    calendlyUrl: 'https://calendly.com/vertexiqsystems/discovery-call',
+    calendlyUrl: 'https://calendly.com/kennethking4u78/30min',
   };
 
   const ukWhatsappHref = `https://wa.me/${brand.ukWhatsappNumber}?text=${encodeURIComponent(
@@ -150,7 +150,7 @@ export default function VertexIQSystemsWebsite() {
               rel="noreferrer"
               className="hidden rounded-2xl border border-white/10 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15 md:inline-flex"
             >
-              Book a Free Consultation
+              Book Free Strategy Call
             </a>
           </nav>
 
@@ -181,7 +181,7 @@ export default function VertexIQSystemsWebsite() {
                   rel="noreferrer"
                   className="rounded-2xl border border-white/15 bg-white/5 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
                 >
-                  Book a Free Consultation
+                  Book Free Strategy Call
                 </a>
               </div>
 
