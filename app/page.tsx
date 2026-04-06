@@ -419,6 +419,71 @@ export default function VertexIQSystemsWebsite() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-7xl px-6 py-20" id="thank-you">
+        <div className="overflow-hidden rounded-[2.2rem] border border-white/10 bg-gradient-to-br from-[#081022] via-[#0b1630] to-[#060b1b] shadow-2xl shadow-[#091126]/50">
+          <div className="grid gap-10 px-8 py-10 md:grid-cols-[1fr_0.95fr] md:px-12 md:py-14">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Thank You</p>
+              <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">Your consultation request is in. Here’s what happens next.</h2>
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+                Thank you for booking with VertexIQ Systems. You should receive your meeting details by email, and you can also reach us directly if you want to share more context before the call.
+              </p>
+
+              <div className="mt-8 grid gap-4 sm:grid-cols-3">
+                <div className="rounded-[1.4rem] border border-white/10 bg-white/5 p-5">
+                  <p className="text-sm text-slate-400">Step 1</p>
+                  <p className="mt-2 font-semibold text-white">Check your email</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-300">Look out for your meeting confirmation and access details.</p>
+                </div>
+                <div className="rounded-[1.4rem] border border-white/10 bg-white/5 p-5">
+                  <p className="text-sm text-slate-400">Step 2</p>
+                  <p className="mt-2 font-semibold text-white">Prepare your goals</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-300">Bring your timeline, business goals, and project priorities to the call.</p>
+                </div>
+                <div className="rounded-[1.4rem] border border-white/10 bg-white/5 p-5">
+                  <p className="text-sm text-slate-400">Step 3</p>
+                  <p className="mt-2 font-semibold text-white">Need immediate contact?</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-300">Send us a WhatsApp message and we will point you in the right direction.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-[1.9rem] border border-white/10 bg-white/5 p-7 backdrop-blur">
+              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#b8cfff]">Direct Contact</p>
+              <h3 className="mt-4 text-2xl font-bold">Reach VertexIQ Systems directly</h3>
+              <p className="mt-4 leading-7 text-slate-300">
+                Use any of these options if you want a faster response before your consultation.
+              </p>
+
+              <div className="mt-8 space-y-4">
+                <a
+                  href={ukWhatsappHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block rounded-2xl border border-white/10 bg-white/5 px-5 py-4 font-semibold text-white transition hover:bg-white/10"
+                >
+                  WhatsApp UK — +44 7376 174981
+                </a>
+                <a
+                  href={ghWhatsappHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block rounded-2xl border border-white/10 bg-white/5 px-5 py-4 font-semibold text-white transition hover:bg-white/10"
+                >
+                  WhatsApp Ghana — +233 534 177 839
+                </a>
+                <a
+                  href={`mailto:${brand.email}`}
+                  className="block rounded-2xl bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] px-5 py-4 font-semibold text-white shadow-xl shadow-[#6C4CF1]/20"
+                >
+                  Email — {brand.email}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-7xl px-6 py-20" id="start-project">
         <div className="overflow-hidden rounded-[2.2rem] border border-white/10 bg-gradient-to-br from-[#0a1f44] via-[#0a122d] to-[#060b1b] shadow-2xl shadow-[#091126]/50">
           <div className="grid gap-10 px-8 py-10 md:grid-cols-[1fr_0.95fr] md:px-12 md:py-14">
@@ -474,7 +539,7 @@ export default function VertexIQSystemsWebsite() {
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
                 <input type="hidden" name="_subject" value="New VertexIQ Lead" />
-                <input type="hidden" name="_next" value="https://www.vertexiqsystems.com/#start-project" />
+                <input type="hidden" name="_next" value="https://www.vertexiqsystems.com/#thank-you" />
 
                 <input name="name" required className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500" placeholder="Your name" />
                 <input name="email" type="email" required className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500" placeholder="Email address" />
