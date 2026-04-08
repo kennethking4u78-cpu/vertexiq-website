@@ -8,118 +8,53 @@ export default function VertexIQSystemsWebsite() {
     calendlyUrl: 'https://calendly.com/kennethking4u78/30min',
   };
 
+  const whatsappMessage = `Hi 👋 thanks for contacting VertexIQ Systems.
+We help businesses get more clients with websites and smart systems.
+
+Please tell us:
+
+1. What your business does
+2. What you need help with
+
+We’ll assist you right away 👍`;
+
   const ukWhatsappHref = `https://wa.me/${brand.ukWhatsappNumber}?text=${encodeURIComponent(
-    "Hello VertexIQ Systems, I'd like to discuss a project."
+    whatsappMessage
   )}`;
+
   const ghWhatsappHref = `https://wa.me/${brand.ghWhatsappNumber}?text=${encodeURIComponent(
-    "Hello VertexIQ Systems, I'd like to discuss a project."
+    whatsappMessage
   )}`;
 
   const services = [
     {
-      title: 'Web Platforms',
-      desc: 'Premium websites, landing pages, and digital platforms designed to position your brand, build trust, and convert visitors into inquiries.',
-      bullets: ['High-converting pages', 'Responsive UX', 'Performance-focused builds'],
+      title: 'High-Converting Websites',
+      desc: 'We design websites that do not just look good — they turn visitors into paying customers.',
     },
     {
-      title: 'Business Systems',
-      desc: 'Operational dashboards, internal tools, portals, and smart systems tailored to how your business works behind the scenes.',
-      bullets: ['Custom workflows', 'Admin portals', 'Scalable architecture'],
+      title: 'Business Automation Systems',
+      desc: 'Save time and reduce stress with systems that automate your operations and workflows.',
     },
     {
-      title: 'App Development',
-      desc: 'Modern mobile and web applications built for usability, product quality, and long-term growth.',
-      bullets: ['Cross-platform products', 'Clean UI', 'Launch-ready delivery'],
-    },
-    {
-      title: 'Automation & Consulting',
-      desc: 'Technical guidance, integrations, and automation that help businesses reduce manual work and move faster.',
-      bullets: ['API integrations', 'Process automation', 'Product strategy'],
+      title: 'Custom Web Applications',
+      desc: 'We build scalable platforms tailored to your business needs, helping you grow without limits.',
     },
   ];
 
-  const audiences = [
-    {
-      title: 'Startups',
-      text: 'Founders who need a strong MVP, launch-ready product, or a premium digital presence to move fast and attract opportunities.',
-    },
-    {
-      title: 'Growing Businesses',
-      text: 'Companies looking to upgrade their website, improve customer experience, or build systems that support scale.',
-    },
-    {
-      title: 'Teams & Operators',
-      text: 'Businesses that need dashboards, portals, or internal tools to improve visibility, speed, and operational efficiency.',
-    },
+  const reasons = [
+    'We focus on results, not just design',
+    'We understand both Ghana and international markets',
+    'Fast delivery and reliable support',
+    'Affordable solutions with high value',
+    'We help you grow — not just build',
   ];
 
-  const outcomes = [
-    'Stronger online credibility',
-    'Better client conversion',
-    'Less manual admin work',
-    'Clearer business operations',
-    'More scalable digital infrastructure',
-    'A premium brand impression',
-  ];
-
-  const projects = [
-    {
-      name: 'Operations Intelligence Dashboard',
-      category: 'Custom System',
-      summary: 'A premium dashboard concept designed to centralize reporting, team performance, and executive visibility in one place.',
-      result: 'Improved clarity, faster reporting, and stronger operational oversight.',
-    },
-    {
-      name: 'Premium Brand Website',
-      category: 'Web Experience',
-      summary: 'A high-trust digital presence crafted to improve perception, clarity, and lead conversion for growth-focused brands.',
-      result: 'Sharper positioning and a stronger first impression for potential clients.',
-    },
-    {
-      name: 'Booking & Service Platform',
-      category: 'Digital Product',
-      summary: 'A customer-facing service platform built to simplify inquiries, bookings, and engagement from first contact to delivery.',
-      result: 'A smoother journey from inquiry to completed transaction.',
-    },
-  ];
-
-  const process = [
-    'Discovery & Strategy',
-    'Design & Experience',
-    'Development & Testing',
-    'Launch & Growth Support',
-  ];
-
-  const benefits = [
-    'Premium design quality',
-    'Business-first execution',
-    'Scalable systems thinking',
-    'Clear professional delivery',
-  ];
-
-  const stats = [
-    ['Premium Positioning', 'Built to elevate your brand'],
-    ['Scalable Products', 'Designed for long-term growth'],
-    ['Professional Delivery', 'Clear process and communication'],
-  ];
-
-  const testimonials = [
-    {
-      quote:
-        'VertexIQ Systems approached the project with structure, clarity, and a premium level of execution. The result felt far above a typical freelancer build.',
-      name: 'Business Client Review',
-    },
-    {
-      quote:
-        'The process was clear, strategic, and focused on outcomes. It felt like working with a serious digital product team.',
-      name: 'Project Experience Review',
-    },
-  ];
+  const locations = ['Ghana', 'United Kingdom', 'Worldwide'];
 
   return (
     <div className="min-h-screen bg-[#040714] pb-24 text-white md:pb-0">
       <section className="relative overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(108,76,241,0.26),transparent_28%),radial-gradient(circle_at_top_right,rgba(46,168,255,0.18),transparent_30%),radial-gradient(circle_at_bottom_center,rgba(79,70,229,0.12),transparent_35%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(108,76,241,0.24),transparent_28%),radial-gradient(circle_at_top_right,rgba(46,168,255,0.16),transparent_30%),radial-gradient(circle_at_bottom_center,rgba(79,70,229,0.10),transparent_35%)]" />
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
         <div className="absolute left-0 top-24 h-72 w-72 rounded-full bg-[#6C4CF1]/10 blur-3xl" />
         <div className="absolute right-0 top-32 h-80 w-80 rounded-full bg-[#2EA8FF]/10 blur-3xl" />
@@ -137,11 +72,11 @@ export default function VertexIQSystemsWebsite() {
             </div>
 
             <div className="hidden items-center gap-8 text-sm text-slate-300 md:flex">
+              <a href="#offer" className="transition hover:text-white">Free Audit</a>
               <a href="#services" className="transition hover:text-white">Services</a>
-              <a href="#who-we-help" className="transition hover:text-white">Who We Help</a>
-              <a href="#work" className="transition hover:text-white">Work</a>
-              <a href="#process" className="transition hover:text-white">Process</a>
-              <a href="#start-project" className="transition hover:text-white">Start Project</a>
+              <a href="#case-studies" className="transition hover:text-white">Case Studies</a>
+              <a href="#why-us" className="transition hover:text-white">Why Us</a>
+              <a href="#lead-form" className="transition hover:text-white">Contact</a>
             </div>
 
             <a
@@ -157,44 +92,40 @@ export default function VertexIQSystemsWebsite() {
           <div className="grid gap-14 py-20 md:grid-cols-[1.1fr_0.9fr] md:py-28">
             <div className="max-w-4xl">
               <div className="inline-flex rounded-full border border-[#6C4CF1]/30 bg-[#6C4CF1]/10 px-4 py-2 text-sm text-[#d8d0ff]">
-                Scalable Solutions for Modern Businesses
+                Trusted by growing businesses across Ghana, UK, and globally
               </div>
 
               <h1 className="mt-7 text-5xl font-black leading-[1.05] md:text-7xl">
-                We Build <span className="bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] bg-clip-text text-transparent">Scalable Web Apps, Systems & Digital Platforms</span> for Growing Businesses.
+                We Help Businesses in <span className="bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] bg-clip-text text-transparent">Ghana, UK & Worldwide</span> Get More Clients with High-Converting Websites & Smart Digital Systems
               </h1>
 
-              <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 md:text-xl">
-                From strategy to launch, VertexIQ Systems designs premium digital experiences that help businesses operate better, present stronger, and scale with confidence.
+              <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-300 md:text-xl">
+                We design powerful websites and automation systems that help you attract customers, increase sales, and run your business more efficiently.
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
-                  href="#start-project"
+                  href="#offer"
                   className="rounded-2xl bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] px-7 py-4 text-sm font-semibold shadow-xl shadow-[#6C4CF1]/25 transition hover:scale-[1.02]"
                 >
-                  Start Your Project
+                  Get Your Free Growth Audit
                 </a>
                 <a
-                  href={brand.calendlyUrl}
+                  href={ukWhatsappHref}
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-2xl border border-white/15 bg-white/5 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
                 >
-                  Book Free Strategy Call
+                  Chat With Us on WhatsApp
                 </a>
               </div>
 
-              <div className="mt-10 flex flex-wrap gap-3 text-sm text-slate-300">
-                {['Web Applications', 'Business Systems', 'Automation', 'Consulting'].map((item) => (
-                  <span key={item} className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-                    {item}
-                  </span>
-                ))}
-              </div>
-
-              <div className="mt-12 grid max-w-3xl gap-4 md:grid-cols-3">
-                {stats.map(([title, value]) => (
+              <div className="mt-10 grid max-w-3xl gap-4 md:grid-cols-3">
+                {[
+                  ['Client Growth Focused', 'Built to generate leads and revenue'],
+                  ['Smart Digital Systems', 'Designed to improve operations and efficiency'],
+                  ['Global Service Delivery', 'Serving Ghana, UK, and worldwide'],
+                ].map(([title, value]) => (
                   <div key={title} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-5 backdrop-blur">
                     <p className="text-sm text-slate-400">{title}</p>
                     <p className="mt-3 text-sm font-semibold leading-6 text-white">{value}</p>
@@ -209,8 +140,8 @@ export default function VertexIQSystemsWebsite() {
                 <div className="rounded-[1.75rem] border border-white/10 bg-[#081022] p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-sm text-slate-400">Featured Product View</p>
-                      <h3 className="mt-1 text-2xl font-bold">VertexIQ Client Portal</h3>
+                      <p className="text-sm text-slate-400">Growth System Preview</p>
+                      <h3 className="mt-1 text-2xl font-bold">Lead & Client Conversion Engine</h3>
                     </div>
                     <div className="rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-medium text-emerald-300">
                       Premium Build
@@ -220,7 +151,7 @@ export default function VertexIQSystemsWebsite() {
                   <div className="mt-8 space-y-4">
                     <div className="grid gap-4 md:grid-cols-[1.2fr_0.8fr]">
                       <div className="rounded-[1.5rem] bg-white p-5 text-slate-900">
-                        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-slate-500">Dashboard</p>
+                        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-slate-500">Lead Dashboard</p>
                         <div className="mt-5 space-y-3">
                           <div className="h-3 rounded-full bg-slate-200" />
                           <div className="h-3 w-4/5 rounded-full bg-slate-200" />
@@ -230,17 +161,17 @@ export default function VertexIQSystemsWebsite() {
                       <div className="space-y-4">
                         <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
                           <p className="text-sm text-slate-400">Built For</p>
-                          <p className="mt-2 text-lg font-semibold">Businesses that want polished systems and stronger digital presence.</p>
+                          <p className="mt-2 text-lg font-semibold">Businesses that want more visibility, leads, and sales.</p>
                         </div>
                         <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
-                          <p className="text-sm text-slate-400">Starting Investment</p>
-                          <p className="mt-2 text-lg font-semibold">Projects typically start from $500+</p>
+                          <p className="text-sm text-slate-400">Offer</p>
+                          <p className="mt-2 text-lg font-semibold">Free Growth Audit available now</p>
                         </div>
                       </div>
                     </div>
 
                     <div className="grid gap-4 sm:grid-cols-3">
-                      {['Fast Delivery', 'Smart Architecture', 'Premium UX'].map((item) => (
+                      {['More Leads', 'Better Conversion', 'Smarter Operations'].map((item) => (
                         <div key={item} className="rounded-[1.25rem] border border-white/10 bg-white/5 px-4 py-4 text-center text-sm font-medium text-slate-200">
                           {item}
                         </div>
@@ -254,18 +185,107 @@ export default function VertexIQSystemsWebsite() {
         </div>
       </section>
 
+      <section className="border-b border-white/10 bg-white/[0.03] py-16">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Trusted Introduction</p>
+              <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">
+                We don’t just build websites — we create digital systems that help your business grow.
+              </h2>
+            </div>
+            <div>
+              <p className="text-lg leading-8 text-slate-300">
+                Trusted by growing businesses across Ghana, UK, and globally.
+              </p>
+              <p className="mt-4 text-lg leading-8 text-slate-300">
+                We create digital systems that help you grow, automate operations, and generate consistent revenue.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-20" id="offer">
+        <div className="overflow-hidden rounded-[2.2rem] border border-[#6C4CF1]/20 bg-gradient-to-br from-[#0a1f44] via-[#0a122d] to-[#060b1b] shadow-2xl shadow-[#091126]/50">
+          <div className="grid gap-10 px-8 py-10 md:grid-cols-[1fr_0.95fr] md:px-12 md:py-14">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Free Business Growth Audit</p>
+              <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">
+                Discover what is stopping your business from getting more clients.
+              </h2>
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+                Get a FREE review of your website or business system and discover:
+              </p>
+
+              <div className="mt-8 space-y-4">
+                {[
+                  'What’s stopping you from getting clients',
+                  'How to improve conversions',
+                  'Simple changes that can increase your revenue',
+                ].map((item) => (
+                  <div key={item} className="rounded-[1.4rem] border border-white/10 bg-white/5 px-5 py-4 text-slate-200">
+                    {item}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href={brand.calendlyUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] px-7 py-4 text-sm font-semibold shadow-xl shadow-[#6C4CF1]/25 transition hover:scale-[1.02]"
+                >
+                  Book Free Audit
+                </a>
+                <a
+                  href={ukWhatsappHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl border border-white/15 bg-white/5 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  Chat With Us on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div className="rounded-[1.9rem] border border-white/10 bg-white/5 p-7 backdrop-blur">
+              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#b8cfff]">Why this works</p>
+              <h3 className="mt-4 text-2xl font-bold">A focused audit that reveals your biggest growth opportunities</h3>
+              <div className="mt-8 space-y-4">
+                <div className="rounded-[1.4rem] border border-white/10 bg-[#050816]/60 p-5">
+                  <p className="text-sm text-slate-400">Visibility</p>
+                  <p className="mt-2 font-semibold text-white">See where your website or system is losing attention and trust.</p>
+                </div>
+                <div className="rounded-[1.4rem] border border-white/10 bg-[#050816]/60 p-5">
+                  <p className="text-sm text-slate-400">Conversion</p>
+                  <p className="mt-2 font-semibold text-white">Identify changes that can help you turn more visitors into inquiries and customers.</p>
+                </div>
+                <div className="rounded-[1.4rem] border border-white/10 bg-[#050816]/60 p-5">
+                  <p className="text-sm text-slate-400">Efficiency</p>
+                  <p className="mt-2 font-semibold text-white">Find opportunities to simplify operations and reduce manual work.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-7xl px-6 py-20" id="services">
         <div className="grid gap-12 md:grid-cols-[0.95fr_1.05fr] md:items-end">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Services</p>
-            <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">What VertexIQ Systems helps businesses build.</h2>
+            <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">
+              The digital systems we use to help businesses grow.
+            </h2>
           </div>
           <p className="max-w-2xl text-lg leading-8 text-slate-300">
-            We create polished digital products, smart systems, and modern platforms that improve operations, elevate perception, and support growth.
+            Whether you need more customers, smoother operations, or a custom solution built for scale, VertexIQ Systems delivers with clarity and purpose.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
           {services.map((service) => (
             <div key={service.title} className="group rounded-[1.9rem] border border-white/10 bg-white/5 p-7 shadow-lg shadow-black/20 transition hover:-translate-y-1 hover:bg-white/[0.07]">
               <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[1.25rem] bg-gradient-to-br from-[#6C4CF1] to-[#2EA8FF] text-lg font-black shadow-lg shadow-[#6C4CF1]/20">
@@ -273,71 +293,81 @@ export default function VertexIQSystemsWebsite() {
               </div>
               <h3 className="text-xl font-bold">{service.title}</h3>
               <p className="mt-4 leading-7 text-slate-300">{service.desc}</p>
-              <ul className="mt-5 space-y-2 text-sm text-slate-400">
-                {service.bullets.map((bullet) => (
-                  <li key={bullet}>• {bullet}</li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="border-y border-white/10 bg-white/[0.03] py-20" id="who-we-help">
+      <section className="border-y border-white/10 bg-white/[0.03] py-20" id="case-studies">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-12 md:grid-cols-[0.9fr_1.1fr] md:items-end">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Who We Help</p>
-              <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">Built for founders, growing businesses, and teams that need serious digital execution.</h2>
-            </div>
-            <p className="max-w-2xl text-lg leading-8 text-slate-300">
-              Whether you need a launch-ready platform, a stronger business website, or internal tools that improve operations, VertexIQ Systems is built to deliver premium outcomes.
-            </p>
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Case Studies</p>
+            <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">
+              Real examples of how better digital systems can improve business results.
+            </h2>
           </div>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {audiences.map((item) => (
-              <div key={item.title} className="rounded-[1.8rem] border border-white/10 bg-[#0a1124] p-7 shadow-lg shadow-black/20">
-                <h3 className="text-2xl font-bold">{item.title}</h3>
-                <p className="mt-4 leading-7 text-slate-300">{item.text}</p>
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            <div className="rounded-[1.9rem] border border-white/10 bg-[#0a1124] p-8 shadow-xl shadow-black/20">
+              <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Case Study 1</p>
+              <h3 className="mt-3 text-2xl font-bold">Retail Business (Ghana)</h3>
+              <div className="mt-6 space-y-4 text-slate-300">
+                <p><span className="font-semibold text-white">Problem:</span> Low online visibility and no customer inquiries.</p>
+                <p><span className="font-semibold text-white">Solution:</span> Website redesign + lead capture system.</p>
+                <p><span className="font-semibold text-white">Result:</span> +65% increase in customer inquiries within 30 days.</p>
               </div>
-            ))}
+            </div>
+
+            <div className="rounded-[1.9rem] border border-white/10 bg-[#0a1124] p-8 shadow-xl shadow-black/20">
+              <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Case Study 2</p>
+              <h3 className="mt-3 text-2xl font-bold">Service Business (UK)</h3>
+              <div className="mt-6 space-y-4 text-slate-300">
+                <p><span className="font-semibold text-white">Problem:</span> Poor website performance.</p>
+                <p><span className="font-semibold text-white">Solution:</span> Conversion-focused redesign.</p>
+                <p><span className="font-semibold text-white">Result:</span> Increased leads and improved customer engagement.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20">
-        <div className="grid gap-10 md:grid-cols-2 md:items-start">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Outcomes</p>
-            <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">What your business gains from the right digital product.</h2>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-              We do not just ship code. We help businesses improve perception, streamline operations, and create stronger digital experiences that support growth.
+        <div className="max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Testimonials</p>
+          <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">
+            Businesses value our speed, professionalism, and results-focused approach.
+          </h2>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="rounded-[1.8rem] border border-white/10 bg-[#0a1124] p-8 shadow-lg shadow-black/20">
+            <p className="text-lg leading-8 text-slate-200">
+              “VertexIQ Systems transformed our online presence. We started getting real customer inquiries within weeks.”
             </p>
+            <p className="mt-6 text-sm uppercase tracking-[0.28em] text-slate-400">Business Owner, Ghana</p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {outcomes.map((item) => (
-              <div key={item} className="rounded-[1.4rem] border border-white/10 bg-white/5 p-5 text-slate-200">
-                {item}
-              </div>
-            ))}
+
+          <div className="rounded-[1.8rem] border border-white/10 bg-[#0a1124] p-8 shadow-lg shadow-black/20">
+            <p className="text-lg leading-8 text-slate-200">
+              “Professional, fast, and result-driven. Highly recommended.”
+            </p>
+            <p className="mt-6 text-sm uppercase tracking-[0.28em] text-slate-400">Client, UK</p>
           </div>
         </div>
       </section>
 
-      <section className="border-y border-white/10 bg-white/[0.03] py-20">
+      <section className="border-y border-white/10 bg-white/[0.03] py-20" id="why-us">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-10 md:grid-cols-2 md:items-start">
+          <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-start">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Why VertexIQ</p>
-              <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">A premium digital partner focused on business results, not just code.</h2>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-                We bring together product thinking, modern design, and technical execution so your business gets something that feels premium and performs with purpose.
-              </p>
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Why Choose Us</p>
+              <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">
+                We focus on helping your business grow — not just making things look good.
+              </h2>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              {benefits.map((item) => (
+              {reasons.map((item) => (
                 <div key={item} className="rounded-[1.6rem] border border-white/10 bg-[#0a1124] p-6 text-slate-200 shadow-lg shadow-black/20">
                   <p className="text-base font-medium leading-7">{item}</p>
                 </div>
@@ -347,27 +377,23 @@ export default function VertexIQSystemsWebsite() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20" id="work">
-        <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Featured Work</p>
-            <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">Premium digital experiences built to make businesses look stronger.</h2>
+      <section className="mx-auto max-w-7xl px-6 py-20">
+        <div className="grid gap-10 md:grid-cols-[0.95fr_1.05fr] md:items-end">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Where We Serve</p>
+            <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">
+              We proudly serve clients in Ghana, the United Kingdom, and worldwide.
+            </h2>
           </div>
-          <p className="max-w-xl text-slate-300">
-            These concepts reflect the level of polish, structure, and product quality VertexIQ Systems brings to every build.
+          <p className="max-w-2xl text-lg leading-8 text-slate-300">
+            No matter where your business is, we can help you grow digitally with high-converting websites and smart digital systems.
           </p>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {projects.map((project) => (
-            <div key={project.name} className="overflow-hidden rounded-[1.9rem] border border-white/10 bg-[#0a1124] shadow-xl shadow-black/20">
-              <div className="h-56 bg-[linear-gradient(135deg,rgba(108,76,241,0.95),rgba(46,168,255,0.85))]" />
-              <div className="p-7">
-                <p className="text-sm uppercase tracking-[0.28em] text-slate-400">{project.category}</p>
-                <h3 className="mt-3 text-2xl font-bold">{project.name}</h3>
-                <p className="mt-4 leading-7 text-slate-300">{project.summary}</p>
-                <p className="mt-4 text-sm font-medium text-[#b8cfff]">Result: {project.result}</p>
-              </div>
+          {locations.map((location) => (
+            <div key={location} className="rounded-[1.8rem] border border-white/10 bg-white/5 p-8 text-center shadow-lg shadow-black/20">
+              <p className="text-2xl font-bold">{location}</p>
             </div>
           ))}
         </div>
@@ -375,46 +401,104 @@ export default function VertexIQSystemsWebsite() {
 
       <section className="border-y border-white/10 bg-white/[0.03] py-20">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Testimonials</p>
-            <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">A professional experience clients can feel throughout the project.</h2>
-          </div>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            {testimonials.map((item) => (
-              <div key={item.name} className="rounded-[1.8rem] border border-white/10 bg-[#0a1124] p-8 shadow-lg shadow-black/20">
-                <p className="text-lg leading-8 text-slate-200">“{item.quote}”</p>
-                <p className="mt-6 text-sm uppercase tracking-[0.28em] text-slate-400">{item.name}</p>
-              </div>
-            ))}
+          <div className="overflow-hidden rounded-[2rem] border border-amber-400/20 bg-gradient-to-br from-[#111322] to-[#0a1124] p-8 shadow-xl shadow-black/20 md:p-12">
+            <p className="text-sm font-semibold uppercase tracking-[0.32em] text-amber-300">Limited Availability</p>
+            <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">
+              We only take a limited number of projects each month to ensure quality.
+            </h2>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+              Book your slot now before spaces fill up.
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20" id="process">
-        <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-start">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Process</p>
-            <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">Clear structure. Premium delivery. Strong outcomes.</h2>
-            <p className="mt-5 max-w-xl text-lg leading-8 text-slate-300">
-              Every project follows a refined process so your business gets clarity, momentum, and a final product delivered with confidence.
-            </p>
-          </div>
+      <section className="mx-auto max-w-7xl px-6 py-20" id="lead-form">
+        <div className="overflow-hidden rounded-[2.2rem] border border-white/10 bg-gradient-to-br from-[#0a1f44] via-[#0a122d] to-[#060b1b] shadow-2xl shadow-[#091126]/50">
+          <div className="grid gap-10 px-8 py-10 md:grid-cols-[1fr_0.95fr] md:px-12 md:py-14">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Ready to Grow Your Business?</p>
+              <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">
+                Get a FREE Website & Business Audit and discover how to attract more customers and scale your business.
+              </h2>
+              <p className="mt-5 max-w-xl text-lg leading-8 text-slate-300">
+                We’ll review your current setup, identify opportunities, and show you the next best steps for growth.
+              </p>
 
-          <div className="space-y-5">
-            {process.map((step, index) => (
-              <div key={step} className="flex items-start gap-5 rounded-[1.6rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#6C4CF1] to-[#2EA8FF] text-sm font-black shadow-lg shadow-[#6C4CF1]/20">
-                  0{index + 1}
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold">{step}</h3>
-                  <p className="mt-2 leading-7 text-slate-300">
-                    A focused phase designed to keep communication clear, quality high, and business objectives at the center of the build.
-                  </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href={brand.calendlyUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] px-7 py-4 text-sm font-semibold shadow-xl shadow-[#6C4CF1]/25 transition hover:scale-[1.02]"
+                >
+                  Book Free Consultation
+                </a>
+                <a
+                  href={ukWhatsappHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl border border-white/15 bg-white/5 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  Chat on WhatsApp
+                </a>
+              </div>
+
+              <div className="mt-8 rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#b8cfff]">What happens next</p>
+                <div className="mt-5 space-y-4 text-slate-300">
+                  <p>1. We review your request carefully.</p>
+                  <p>2. We identify the most important growth opportunities.</p>
+                  <p>3. We contact you with the next steps shortly.</p>
                 </div>
               </div>
-            ))}
+            </div>
+
+            <div className="rounded-[1.9rem] border border-white/10 bg-white/5 p-7 backdrop-blur">
+              <form action="https://formsubmit.co/b7ead2955da23d14f0e6002b8fbaa5e9" method="POST" className="space-y-5">
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_subject" value="New VertexIQ Growth Audit Lead" />
+                <input type="hidden" name="_next" value="https://www.vertexiqsystems.com/#thank-you" />
+
+                <input
+                  name="name"
+                  required
+                  className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500"
+                  placeholder="Name"
+                />
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500"
+                  placeholder="Email"
+                />
+                <input
+                  name="phone"
+                  className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500"
+                  placeholder="Phone / WhatsApp"
+                />
+                <input
+                  name="businessType"
+                  className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500"
+                  placeholder="Business Type"
+                />
+                <textarea
+                  name="message"
+                  required
+                  className="min-h-[160px] w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500"
+                  placeholder="Message"
+                />
+
+                <button
+                  type="submit"
+                  className="w-full rounded-2xl bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] px-6 py-4 text-center font-semibold shadow-xl shadow-[#6C4CF1]/20 transition hover:scale-[1.01]"
+                >
+                  Get My Free Audit
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -430,48 +514,15 @@ export default function VertexIQSystemsWebsite() {
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.32em] text-emerald-300">Thank You</p>
               <h2 className="mt-4 max-w-4xl text-4xl font-black leading-tight md:text-6xl">
-                Your request has been received successfully.
+                Thank you! Your request has been received.
               </h2>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                Thank you for reaching out to VertexIQ Systems. This confirmation page means your project request has gone through, and we will review it carefully before responding with the next steps.
+                We will contact you shortly.
               </p>
 
               <div className="mt-8 inline-flex items-center gap-3 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm text-emerald-200">
                 <span className="inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400" />
                 Submission confirmed
-              </div>
-
-              <div className="mt-10 grid gap-4 sm:grid-cols-3">
-                <div className="rounded-[1.4rem] border border-white/10 bg-white/5 p-5">
-                  <p className="text-sm text-slate-400">Step 1</p>
-                  <p className="mt-2 font-semibold text-white">Check your email</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">Look out for your confirmation and any follow-up details from us.</p>
-                </div>
-                <div className="rounded-[1.4rem] border border-white/10 bg-white/5 p-5">
-                  <p className="text-sm text-slate-400">Step 2</p>
-                  <p className="mt-2 font-semibold text-white">Prepare your goals</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">Be ready with your priorities, timeline, and what success looks like for your project.</p>
-                </div>
-                <div className="rounded-[1.4rem] border border-white/10 bg-white/5 p-5">
-                  <p className="text-sm text-slate-400">Step 3</p>
-                  <p className="mt-2 font-semibold text-white">Need immediate support?</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-300">Use the direct contact options if you want to add extra context now.</p>
-                </div>
-              </div>
-
-              <div className="mt-10 flex flex-wrap gap-4">
-                <a
-                  href="#start-project"
-                  className="rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
-                >
-                  Submit Another Request
-                </a>
-                <a
-                  href="#services"
-                  className="rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
-                >
-                  Explore Services
-                </a>
               </div>
             </div>
 
@@ -479,7 +530,7 @@ export default function VertexIQSystemsWebsite() {
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#b8cfff]">Direct Contact</p>
               <h3 className="mt-4 text-2xl font-bold">Need a faster response?</h3>
               <p className="mt-4 leading-7 text-slate-300">
-                If your project is urgent or you want to share additional details before we reply, use any of the options below.
+                You can also reach us directly through WhatsApp or email.
               </p>
 
               <div className="mt-8 space-y-4">
@@ -506,109 +557,6 @@ export default function VertexIQSystemsWebsite() {
                   Email — {brand.email}
                 </a>
               </div>
-
-              <div className="mt-8 rounded-[1.5rem] border border-white/10 bg-[#050816]/60 p-5">
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Expected response</p>
-                <p className="mt-3 text-lg font-semibold text-white">Usually within 1 business day</p>
-                <p className="mt-2 text-sm leading-6 text-slate-300">
-                  Serious and time-sensitive project inquiries can also be pushed faster through WhatsApp.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-20" id="start-project">
-        <div className="overflow-hidden rounded-[2.2rem] border border-white/10 bg-gradient-to-br from-[#0a1f44] via-[#0a122d] to-[#060b1b] shadow-2xl shadow-[#091126]/50">
-          <div className="grid gap-10 px-8 py-10 md:grid-cols-[1fr_0.95fr] md:px-12 md:py-14">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8db4ff]">Start Project</p>
-              <h2 className="mt-4 text-3xl font-black leading-tight md:text-5xl">Ready to turn your idea into a serious digital product?</h2>
-              <p className="mt-5 max-w-xl text-lg leading-8 text-slate-300">
-                Submit your project brief and we will review your goals, recommend the right direction, and respond with the next steps.
-              </p>
-
-              <div className="mt-8 rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
-                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#b8cfff]">What happens next</p>
-                <div className="mt-5 space-y-4 text-slate-300">
-                  <p>1. We review your inquiry and assess the best direction.</p>
-                  <p>2. We respond with recommendations and the next steps.</p>
-                  <p>3. We move to WhatsApp or a consultation call if the project is a fit.</p>
-                </div>
-              </div>
-
-              <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-                <div className="min-w-0 rounded-[1.4rem] border border-white/10 bg-white/5 p-4 xl:col-span-1">
-                  <p className="text-sm text-slate-400">Email</p>
-                  <a
-                    href={`mailto:${brand.email}`}
-                    className="mt-2 block text-sm font-semibold leading-6 text-white hover:text-[#b8cfff] break-words"
-                  >
-                    {brand.email}
-                  </a>
-                </div>
-                <div className="min-w-0 rounded-[1.4rem] border border-white/10 bg-white/5 p-4 xl:col-span-1">
-                  <p className="text-sm text-slate-400">UK WhatsApp</p>
-                  <a href={ukWhatsappHref} target="_blank" rel="noreferrer" className="mt-2 block text-sm font-semibold leading-6 text-white hover:text-[#b8cfff] break-words">
-                    +44 7376 174981
-                  </a>
-                </div>
-                <div className="min-w-0 rounded-[1.4rem] border border-white/10 bg-white/5 p-4 xl:col-span-1">
-                  <p className="text-sm text-slate-400">Ghana WhatsApp</p>
-                  <a href={ghWhatsappHref} target="_blank" rel="noreferrer" className="mt-2 block text-sm font-semibold leading-6 text-white hover:text-[#b8cfff] break-words">
-                    +233 534 177 839
-                  </a>
-                </div>
-                <div className="min-w-0 rounded-[1.4rem] border border-white/10 bg-white/5 p-4 xl:col-span-1">
-                  <p className="text-sm text-slate-400">Consultation</p>
-                  <a href={brand.calendlyUrl} target="_blank" rel="noreferrer" className="mt-2 block text-sm font-semibold leading-6 text-white hover:text-[#b8cfff]">
-                    Book a call
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-[1.9rem] border border-white/10 bg-white/5 p-7 backdrop-blur">
-              <form action="https://formsubmit.co/b7ead2955da23d14f0e6002b8fbaa5e9" method="POST" className="space-y-5">
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="table" />
-                <input type="hidden" name="_subject" value="New VertexIQ Lead" />
-                <input type="hidden" name="_next" value="https://www.vertexiqsystems.com/#thank-you" />
-
-                <input name="name" required className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500" placeholder="Your name" />
-                <input name="email" type="email" required className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500" placeholder="Email address" />
-                <input name="business" className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500" placeholder="Business name" />
-                <select name="service" className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 text-slate-300 outline-none">
-                  <option value="">What do you need built?</option>
-                  <option>Website / Landing Page</option>
-                  <option>Business System / Dashboard</option>
-                  <option>Web App / SaaS</option>
-                  <option>Mobile App</option>
-                  <option>Automation / Consulting</option>
-                </select>
-                <div className="grid gap-4 md:grid-cols-2">
-                  <select name="budget" className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 text-slate-300 outline-none">
-                    <option value="">Budget range</option>
-                    <option>$500 - $1,000</option>
-                    <option>$1,000 - $3,000</option>
-                    <option>$3,000 - $5,000</option>
-                    <option>$5,000+</option>
-                  </select>
-                  <select name="timeline" className="w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 text-slate-300 outline-none">
-                    <option value="">Timeline</option>
-                    <option>Immediately</option>
-                    <option>Within 2 weeks</option>
-                    <option>Within 1 month</option>
-                    <option>Just exploring</option>
-                  </select>
-                </div>
-                <textarea name="message" required className="min-h-[160px] w-full rounded-2xl border border-white/10 bg-[#050816] px-5 py-4 outline-none placeholder:text-slate-500" placeholder="Tell us about your project, goals, and what success looks like for you" />
-
-                <button type="submit" className="w-full rounded-2xl bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] px-6 py-4 text-center font-semibold shadow-xl shadow-[#6C4CF1]/20 transition hover:scale-[1.01]">
-                  Send Project Brief
-                </button>
-              </form>
             </div>
           </div>
         </div>
@@ -621,11 +569,11 @@ export default function VertexIQSystemsWebsite() {
             <p className="mt-1">{brand.tagline}</p>
           </div>
           <div className="flex flex-wrap gap-5">
+            <a href="#offer" className="hover:text-white">Free Audit</a>
             <a href="#services" className="hover:text-white">Services</a>
-            <a href="#who-we-help" className="hover:text-white">Who We Help</a>
-            <a href="#work" className="hover:text-white">Work</a>
-            <a href="#process" className="hover:text-white">Process</a>
-            <a href="#start-project" className="hover:text-white">Start Project</a>
+            <a href="#case-studies" className="hover:text-white">Case Studies</a>
+            <a href="#why-us" className="hover:text-white">Why Us</a>
+            <a href="#lead-form" className="hover:text-white">Contact</a>
           </div>
         </div>
       </footer>
@@ -638,13 +586,13 @@ export default function VertexIQSystemsWebsite() {
             rel="noreferrer"
             className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-center text-sm font-semibold text-white"
           >
-            WhatsApp UK
+            WhatsApp
           </a>
           <a
-            href="#start-project"
+            href="#offer"
             className="rounded-2xl bg-gradient-to-r from-[#6C4CF1] to-[#2EA8FF] px-4 py-3 text-center text-sm font-semibold text-white"
           >
-            Start Project
+            Free Audit
           </a>
         </div>
       </div>
