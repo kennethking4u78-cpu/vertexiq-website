@@ -1,4 +1,4 @@
-import { links, site } from "./site-data";
+import { site } from "@/lib/content";
 
 export default function CTASection() {
   return (
@@ -30,7 +30,7 @@ export default function CTASection() {
               </a>
 
               <a
-                href={links.ukWhatsapp}
+                href={site.ukWhatsapp}
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-2xl border border-white/15 bg-white/5 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
